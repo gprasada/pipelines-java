@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 strategy:
- maxParallel: 1
+ maxParallel: 0
  
 
 steps:
