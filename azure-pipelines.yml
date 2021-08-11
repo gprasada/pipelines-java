@@ -27,7 +27,6 @@ steps:
 - task: Docker@2
   inputs:
     command: build
-    Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
     tags: $(Build.BuildId)'
 - task: PublishPipelineArtifact@1  
   inputs:    
