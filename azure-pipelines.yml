@@ -24,6 +24,9 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: CmdLine@2
+  inputs:
+    script: "ls -ltr"   
 - task: Docker@2
   inputs:
     command: build
